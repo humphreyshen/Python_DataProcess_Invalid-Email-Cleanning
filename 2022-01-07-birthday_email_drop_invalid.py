@@ -10,4 +10,5 @@ invalid_email=org_gmail['Email'].replace("(錯誤)",'',regex=True).str.replace("
 for i in personal['email']:
     for x in invalid_email:
         if i == x:
-         print(i)
+         print(i) 
+         ellen is beautiful
