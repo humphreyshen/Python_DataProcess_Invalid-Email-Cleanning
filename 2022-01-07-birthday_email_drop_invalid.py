@@ -1,4 +1,3 @@
-from re import X
 import pandas as pd
 import numpy as np
 
@@ -11,4 +10,3 @@ for i in personal['email']:
     for x in invalid_email:
         if i == x:
          print(i) 
-         ellen is beautiful
