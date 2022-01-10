@@ -32,7 +32,7 @@ while True:
 personal=pd.read_csv(Original_Path)
 org_gmail=pd.read_csv(Compare_Path)
 
-invalid_email=org_gmail['Email'].replace("(錯誤)",'',regex=True).str.replace("(","",regex=True).str.replace(")","",regex=True)
+invalid_email=org_gmail['email'].replace("(錯誤)",'',regex=True).str.replace("(","",regex=True).str.replace(")","",regex=True)
 
 result=[]
 for i in personal.email:
@@ -48,3 +48,6 @@ final_result_id=final_result.loc[:,['id']].drop_duplicates(subset=['id']).values
 
 print('\n\n\n--------以下編號是由系統為您比對出需要刪除之錯誤電子信箱的ID序號--------')
 print(final_result_id)
+print('\n\n--------您確認需要更新的數目為--------')
+print(len(final_result_id))
+print('\n\n')
