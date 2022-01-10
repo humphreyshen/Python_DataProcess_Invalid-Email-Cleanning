@@ -51,3 +51,16 @@ print(final_result_id)
 print('\n\n--------您確認需要更新的數目為--------')
 print(len(final_result_id))
 print('\n\n')
+
+print('請問您是否需要轉換成SQL語法？')
+sql_question=input('需要請輸入"Y"，不需要請輸入"N":')
+
+if sql_question=='Y':
+   print('\n---------------------下方為輸出SQL語法---------------------')
+   print('Insert into (table name) (col_name)\n','Values',final_result_id,';')
+   print('----------------------------------------------------------')
+else:
+   print('\n感謝您使用本程式')
+   
+print('\n==============================================感謝您使用本程式==============================================')
+print('\n')
